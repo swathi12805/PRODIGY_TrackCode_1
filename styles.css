@@ -1,0 +1,70 @@
+body{
+    padding:0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(2,54,71);
+}
+
+nav{
+    background-color:rgb(89, 111, 129);
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content:space-around;
+}
+nav li{
+    display:inline-block;
+    margin:0 8px;
+}
+nav a{
+    text-decoration: none;
+    padding: 8px 12px;
+    color:black
+}
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bolder;
+}
+nav a:hover{
+    background-color:rgba(115, 174, 223, 0.737);
+}
+.menu_line{
+    height:4px;
+    width: 28px;
+    background-color:black;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor:pointer;
+    display: none;
+
+}
+@media all and (max-width: 730px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding:10px 0;
+    }
+    .logo{
+        align-self: flex-start;
+        padding:0px 0px 0px 20px;
+    }
+    ul{
+       text-align:center;
+       display:none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right:20px;
+        top:6px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
